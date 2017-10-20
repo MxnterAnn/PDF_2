@@ -8,23 +8,23 @@ import org.netbeans.lib.awtextra.*;
 public class Vista extends JFrame {
 
     JTextField txtRadio;
-    JLabel etiArea, etiPromedio;
+    JLabel etiArea, etiPerimetro;
 
     public Vista() {
         this.setTitle("EJERCICIO 3");
         this.setSize(300, 200);
         this.getContentPane().setLayout(new AbsoluteLayout());
 
-        JTextField txtPrimerTrimestre = new JTextField();
-        this.getContentPane().add(txtPrimerTrimestre, new AbsoluteConstraints(20, 20, 200, 30));
-        JLabel etiArea = new JLabel();
+        txtRadio = new JTextField();
+        this.getContentPane().add(txtRadio, new AbsoluteConstraints(20, 20, 200, 30));
+        etiArea = new JLabel();
         this.getContentPane().add(etiArea, new AbsoluteConstraints(20, 60, 200, 30));
         etiArea.setBorder(new LineBorder(Color.black));
         etiArea.setOpaque(true);
-        JLabel etiPromedio = new JLabel();
-        this.getContentPane().add(etiPromedio, new AbsoluteConstraints(20, 100, 200, 30));
-        etiPromedio.setBorder(new LineBorder(Color.black));
-        etiPromedio.setOpaque(true);
+        etiPerimetro = new JLabel();
+        this.getContentPane().add(etiPerimetro, new AbsoluteConstraints(20, 100, 200, 30));
+        etiPerimetro.setBorder(new LineBorder(Color.black));
+        etiPerimetro.setOpaque(true);
     }
 
     public static void main(String[] args) {

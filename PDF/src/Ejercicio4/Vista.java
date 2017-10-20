@@ -16,13 +16,13 @@ public class Vista extends JFrame {
         this.setSize(400, 400);
         this.getContentPane().setLayout(new AbsoluteLayout());
 
-        JTextField txtbase = new JTextField();
+        txtbase = new JTextField();
         this.getContentPane().add(txtbase, new AbsoluteConstraints(20, 20, 200, 40));
-        JTextField txtexponente = new JTextField();
+        txtexponente = new JTextField();
         this.getContentPane().add(txtexponente, new AbsoluteConstraints(20, 80, 200, 40));
-        JButton btnCalcular = new JButton("Calcular");
+        btnCalcular = new JButton("Calcular");
         this.getContentPane().add(btnCalcular, new AbsoluteConstraints(20, 140, 200, 40));
-        JLabel etiResultado = new JLabel("                       Resultado");
+        etiResultado = new JLabel("                       Resultado");
         this.getContentPane().add(etiResultado, new AbsoluteConstraints(20, 210, 200, 40));
         etiResultado.setBorder(new LineBorder(Color.black));
         etiResultado.setOpaque(true);
